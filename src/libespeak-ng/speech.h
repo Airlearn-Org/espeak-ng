@@ -56,7 +56,7 @@ extern "C"
 
 #define PLATFORM_WINDOWS 1
 #define PATHSEP '\\'
-#define N_PATH_HOME_DEF  230
+#define N_PATH_HOME_DEF  3
 #define NO_VARIADIC_MACROS
 
 #else
@@ -65,9 +65,9 @@ extern "C"
 #define PATHSEP  '/'
 #if defined(__linux__) // Linux
 #  include <linux/limits.h>
-#  define N_PATH_HOME_DEF  PATH_MAX
+#  define N_PATH_HOME_DEF  3
 #else
-#  define N_PATH_HOME_DEF  30
+#  define N_PATH_HOME_DEF  3
 #endif
 #define USE_NANOSLEEP
 #define __cdecl
