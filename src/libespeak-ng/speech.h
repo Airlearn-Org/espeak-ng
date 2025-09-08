@@ -67,7 +67,7 @@ extern "C"
 #  include <linux/limits.h>
 #  define N_PATH_HOME_DEF  PATH_MAX
 #else
-#  define N_PATH_HOME_DEF  160
+#  define N_PATH_HOME_DEF  30
 #endif
 #define USE_NANOSLEEP
 #define __cdecl
